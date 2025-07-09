@@ -47,6 +47,9 @@
         </set>
         where id = #{id}
     </update>
+    <update id="startOrStop">
+        update dish set status = #{status} where id = #{id}
+    </update>
 
     <select id="list" resultType="Dish" parameterType="Dish">
         select * from dish
