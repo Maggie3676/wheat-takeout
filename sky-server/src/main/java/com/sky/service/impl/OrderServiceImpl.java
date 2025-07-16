@@ -1,6 +1,5 @@
 package com.sky.service.impl;
 
-<<<<<<< HEAD
 import com.alibaba.fastjson.JSONObject;
 import com.sky.constant.MessageConstant;
 import com.sky.context.BaseContext;
@@ -14,32 +13,13 @@ import com.sky.mapper.*;
 import com.sky.service.OrderService;
 import com.sky.utils.WeChatPayUtil;
 import com.sky.vo.OrderPaymentVO;
-=======
-import com.sky.constant.MessageConstant;
-import com.sky.context.BaseContext;
-import com.sky.dto.OrdersSubmitDTO;
-import com.sky.entity.AddressBook;
-import com.sky.entity.OrderDetail;
-import com.sky.entity.Orders;
-import com.sky.entity.ShoppingCart;
-import com.sky.exception.AddressBookBusinessException;
-import com.sky.exception.ShoppingCartBusinessException;
-import com.sky.mapper.AddressBookMapper;
-import com.sky.mapper.OrderDetailMapper;
-import com.sky.mapper.OrderMapper;
-import com.sky.mapper.ShoppingCartMapper;
-import com.sky.service.OrderService;
->>>>>>> 4eb507dcf3af3f4a976f145fb35376f973ff6f76
 import com.sky.vo.OrderSubmitVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-<<<<<<< HEAD
 import java.math.BigDecimal;
-=======
->>>>>>> 4eb507dcf3af3f4a976f145fb35376f973ff6f76
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -56,13 +36,10 @@ public class OrderServiceImpl implements OrderService {
     private AddressBookMapper addressBookMapper;
     @Autowired
     private ShoppingCartMapper shoppingCartMapper;
-<<<<<<< HEAD
     @Autowired
     private WeChatPayUtil weChatPayUtil;
     @Autowired
     private UserMapper userMapper;
-=======
->>>>>>> 4eb507dcf3af3f4a976f145fb35376f973ff6f76
 
     /**
      * 用户下单
@@ -122,7 +99,6 @@ public class OrderServiceImpl implements OrderService {
 
         return orderSubmitVO;
     }
-<<<<<<< HEAD
 
     /**
      * 订单支付
@@ -173,6 +149,4 @@ public class OrderServiceImpl implements OrderService {
 
         orderMapper.update(orders);
     }
-=======
->>>>>>> 4eb507dcf3af3f4a976f145fb35376f973ff6f76
 }

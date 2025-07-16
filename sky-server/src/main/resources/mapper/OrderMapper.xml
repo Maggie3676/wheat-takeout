@@ -13,7 +13,6 @@
             #{payStatus}, #{amount}, #{remark}, #{phone}, #{address}, #{consignee},
             #{estimatedDeliveryTime}, #{deliveryStatus}, #{packAmount}, #{tablewareNumber}, #{tablewareStatus})
     </insert>
-<<<<<<< HEAD
 
     <update id="update" parameterType="com.sky.entity.Orders">
         update orders
@@ -45,6 +44,4 @@
         </set>
         where id = #{id}
     </update>
-=======
->>>>>>> 4eb507dcf3af3f4a976f145fb35376f973ff6f76
 </mapper>
